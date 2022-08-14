@@ -38,11 +38,12 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
-  navigation.classList.remove('scroll')
+  const navId = document.getElementById('navigation')
+  navId.classList.remove('scroll')
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    navId.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    navId.classList.remove('scroll')
   }
 }
 function showBackToTopButtonOnScroll() {
